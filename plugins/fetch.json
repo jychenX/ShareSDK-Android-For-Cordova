@@ -1,0 +1,10 @@
+{
+    "com.sharesdk.cordova.share": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\jychen\\Desktop\\Cordovad\\com.sharesdk.cordova.share"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

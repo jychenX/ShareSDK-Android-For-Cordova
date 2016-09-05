@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"ShareSDKUtils\"><param name=\"android-package\" value=\"com.sharesdk.cordova.share.ShareSDKUtils\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.sharesdk.cordova.share": {
+            "PACKAGE_NAME": "cn.sharesdk.demo.cordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.sharesdk.cordova.share.ShareSDK",
+            "file": "plugins/com.sharesdk.cordova.share/www/ShareSDK.js",
+            "pluginId": "com.sharesdk.cordova.share",
+            "clobbers": [
+                "ShareSDK"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.sharesdk.cordova.share": "0.0.1"
+    }
+}

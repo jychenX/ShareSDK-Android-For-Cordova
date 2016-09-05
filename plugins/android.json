@@ -1,0 +1,15 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.sharesdk.cordova.share": {
+            "PACKAGE_NAME": "cn.sharesdk.demo.cordova"
+        }
+    },
+    "dependent_plugins": {}
+}

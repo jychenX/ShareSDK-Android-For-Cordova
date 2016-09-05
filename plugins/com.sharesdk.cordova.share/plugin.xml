@@ -1,0 +1,38 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+   
+  <plugin  xmlns="http://apache.org/cordova/ns/plugins/1.0"    
+      id="com.sharesdk.cordova.share"
+      version="0.0.1">
+      <name>ShareSDKUtils</name>
+      <description>ShareSDKUtils  Plugin</description>
+      <license>Apache 2.0</license>
+       <keywords>cordova,sharesdk</keywords>
+      
+   
+      <js-module src="www/ShareSDK.js"  name="ShareSDK">
+          <clobbers target="ShareSDK"  />
+      </js-module>
+   
+        
+   
+      <!-- android -->
+      <platform name="android">
+                     
+                     <source-file  src="src/android/ShareSDKUtils.java"  target-dir="src/com/sharesdk/cordova/share" />
+   
+          <config-file  target="res/xml/config.xml" parent="/*">
+              <feature  name="ShareSDKUtils">
+                  <param  name="android-package"  value="com.sharesdk.cordova.share.ShareSDKUtils"/>
+              </feature>
+          </config-file>
+   
+          <config-file  target="AndroidManifest.xml" parent="/*">
+              <uses-permission  android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+          </config-file>
+   
+        
+         
+   
+       </platform>   
+   
+  </plugin>

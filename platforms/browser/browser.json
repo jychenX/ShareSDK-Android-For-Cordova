@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.sharesdk.cordova.share": {
+            "PACKAGE_NAME": "cn.sharesdk.demo.cordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.sharesdk.cordova.share/www/ShareSDK.js",
+            "id": "com.sharesdk.cordova.share.ShareSDK",
+            "pluginId": "com.sharesdk.cordova.share",
+            "clobbers": [
+                "ShareSDK"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.sharesdk.cordova.share": "0.0.1"
+    }
+}
