@@ -102,14 +102,6 @@ function ShareSDK()
      * @param platform          平台类型
      * @param callback          回调方法
      */
-    this.abcde = function () {
-
-    }
-
-    function abc(){
-
-    }
-
     this.authorize = function (platform)
     {
         alert("authorize");
@@ -299,4 +291,4 @@ function ShareSDK()
 };
 
 var  sharesdk = new ShareSDK();
-module.exports = sharesdk;
+// module.exports = sharesdk;
