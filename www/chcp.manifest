@@ -1,0 +1,26 @@
+[
+  {
+    "file": "css/index.css",
+    "hash": "01c79133b8acb53662abac42fba4b017"
+  },
+  {
+    "file": "img/logo.png",
+    "hash": "fc5e7db71b6d9241f172dd27e8184c1d"
+  },
+  {
+    "file": "index.html",
+    "hash": "193107cc7c753d0baaf01ead17573c63"
+  },
+  {
+    "file": "js/index.js",
+    "hash": "0ba83df8459288fd1fa1576465163ff5"
+  },
+  {
+    "file": "plugins/com.sharesdk.cordova.share/www/ShareSDK.js",
+    "hash": "5f49c4f3b335edef305bea81a4201685"
+  },
+  {
+    "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
+    "hash": "0beaa97dfe7d1183b7c4736ad5f2bbb2"
+  }
+]

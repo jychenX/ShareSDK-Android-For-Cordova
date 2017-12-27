@@ -7,12 +7,21 @@ module.exports = [
         "clobbers": [
             "ShareSDK"
         ]
+    },
+    {
+        "id": "cordova-hot-code-push-plugin.chcp",
+        "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
+        "pluginId": "cordova-hot-code-push-plugin",
+        "clobbers": [
+            "chcp"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.sharesdk.cordova.share": "0.0.1"
+    "com.sharesdk.cordova.share": "0.0.1",
+    "cordova-hot-code-push-plugin": "1.5.3"
 };
 // BOTTOM OF METADATA
 });

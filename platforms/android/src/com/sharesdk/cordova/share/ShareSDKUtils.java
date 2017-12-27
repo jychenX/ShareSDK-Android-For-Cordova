@@ -262,20 +262,20 @@ public class ShareSDKUtils extends CordovaPlugin implements Handler.Callback {
         JSONObject jsonMap = new JSONObject();
         if(plat.isAuthValid()){
         	
-            try {
-		jsonMap.put("expiresTime", plat.getDb().getExpiresTime());
-		jsonMap.put("expiresIn", plat.getDb().getExpiresIn());
-	        jsonMap.put("token", plat.getDb().getToken());
-	        jsonMap.put("tokenSecret", plat.getDb().getTokenSecret());
-	        jsonMap.put("userGender", plat.getDb().getUserGender());
-	        jsonMap.put("userID", plat.getDb().getUserId());
-	        jsonMap.put("openID", plat.getDb().get("openid"));
-	        jsonMap.put("userName", plat.getDb().getUserName());
-	        jsonMap.put("userIcon", plat.getDb().getUserIcon());
-	    } catch (JSONException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	    }
+        	try {
+				jsonMap.put("expiresTime", plat.getDb().getExpiresTime());
+				jsonMap.put("expiresIn", plat.getDb().getExpiresIn());
+	        	jsonMap.put("token", plat.getDb().getToken());
+	        	jsonMap.put("tokenSecret", plat.getDb().getTokenSecret());
+	            jsonMap.put("userGender", plat.getDb().getUserGender());
+	            jsonMap.put("userID", plat.getDb().getUserId());
+	            jsonMap.put("openID", plat.getDb().get("openid"));
+	            jsonMap.put("userName", plat.getDb().getUserName());
+	            jsonMap.put("userIcon", plat.getDb().getUserIcon());
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         	
         }
         System.out.println(jsonMap.toString());

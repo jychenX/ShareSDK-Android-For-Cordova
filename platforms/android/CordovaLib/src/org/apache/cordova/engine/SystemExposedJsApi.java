@@ -36,6 +36,17 @@ class SystemExposedJsApi implements ExposedJsApi {
         this.bridge = bridge;
     }
 
+    /**
+     *
+     * @param bridgeSecret
+     * @param service 类名
+     * @param action 方法名
+     * @param callbackId 回调函数的id，同样是识别作用
+     * @param arguments 方法传的参数
+     * @return
+     * @throws JSONException
+     * @throws IllegalAccessException
+     */
     @JavascriptInterface
     public String exec(int bridgeSecret, String service, String action, String callbackId, String arguments) throws JSONException, IllegalAccessException {
         return bridge.jsExec(bridgeSecret, service, action, callbackId, arguments);

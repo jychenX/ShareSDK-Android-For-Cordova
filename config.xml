@@ -7,7 +7,10 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
+	<chcp>
+	<config-file url="https://e70d6fe0.ngrok.io/chcp.json"/>
+	<local-development enabled="true"/>
+	</chcp>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -23,3 +26,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
 </widget>
+
+

@@ -12,9 +12,7 @@
       <js-module src="www/ShareSDK.js"  name="ShareSDK">
           <clobbers target="ShareSDK"  />
       </js-module>
-   
-        
-   
+
       <!-- android -->
       <platform name="android">
                      
@@ -29,10 +27,6 @@
           <config-file  target="AndroidManifest.xml" parent="/*">
               <uses-permission  android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
           </config-file>
-   
-        
-         
-   
        </platform>   
    
   </plugin>

@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"ShareSDKUtils\"><param name=\"android-package\" value=\"com.sharesdk.cordova.share.ShareSDKUtils\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"HotCodePush\"><param name=\"android-package\" value=\"com.nordnetab.chcp.main.HotCodePushPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -22,6 +26,34 @@
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 1
                         }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<preference name=\"loadUrlTimeoutValue\" value=\"60000\" />",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -29,6 +61,9 @@
     },
     "installed_plugins": {
         "com.sharesdk.cordova.share": {
+            "PACKAGE_NAME": "cn.sharesdk.demo.cordova"
+        },
+        "cordova-hot-code-push-plugin": {
             "PACKAGE_NAME": "cn.sharesdk.demo.cordova"
         }
     },
@@ -41,9 +76,18 @@
             "clobbers": [
                 "ShareSDK"
             ]
+        },
+        {
+            "id": "cordova-hot-code-push-plugin.chcp",
+            "file": "plugins/cordova-hot-code-push-plugin/www/chcp.js",
+            "pluginId": "cordova-hot-code-push-plugin",
+            "clobbers": [
+                "chcp"
+            ]
         }
     ],
     "plugin_metadata": {
-        "com.sharesdk.cordova.share": "0.0.1"
+        "com.sharesdk.cordova.share": "0.0.1",
+        "cordova-hot-code-push-plugin": "1.5.3"
     }
 }
